@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Studio Ghibli</string>
+    <string name="sg_films">Films</string>
+    <string name="sg_locations">Locations</string>
+    <string name="sg_people">People</string>
+    <string name="sg_species">Species</string>
+    <string name="sg_vehicles">Vehicles</string>
+
+    <string name="something_went_wrong">Something has gone wrong…</string>
+    <string name="films">Films</string>
+    <string name="film">Film</string>
+
+    <string name="film_director">Director: %1$s</string>
+    <string name="film_producer">Producer: %1$s</string>
+    <string name="film_release_date">Released: %1$d</string>
+    <string name="film_rotten_tomatoes_score">Rotten Tomatoes: %1$d</string>
+    <string name="under_construction">Under Construction</string>
+    <string name="people">People</string>
+
+</resources>

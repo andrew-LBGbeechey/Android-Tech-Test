@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/film_anchor_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".film.Film">
+
+    <include layout="@layout/titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarLayout">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/item_film_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="?attr/colorSurface"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:padding="@dimen/default_padding">
+
+                <TextView
+                    android:id="@+id/film_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="@dimen/text_heading"
+                    android:textStyle="bold"
+                    tools:text="Title Of Film" />
+
+                <TextView
+                    android:id="@+id/film_director"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textStyle="italic"
+                    tools:text="Director Of Film" />
+
+                <TextView
+                    android:id="@+id/film_producer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="?android:attr/textColorPrimary"
+                    tools:text="Producer Of Film" />
+
+                <TextView
+                    android:id="@+id/film_release_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="?android:attr/textColorPrimary"
+                    tools:text="Release Date Of Film" />
+
+                <TextView
+                    android:id="@+id/rotten_tomatoes_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:gravity="center_horizontal"
+                    android:textColor="?android:attr/textColorPrimary"
+                    tools:text="Rotten Tomatoes Score Of Film" />
+
+                <TextView
+                    android:id="@+id/film_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingMultiplier="@dimen/line_spacing_item"
+                    android:textColor="?android:attr/textColorPrimary"
+                    tools:text="Description Of Film" />
+
+                <TextView
+                    android:id="@+id/film_people"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:gravity="center_horizontal"
+                    android:textColor="?android:attr/textColorPrimary"
+                    tools:text="People Of Film" />
+
+                <TextView
+                    android:id="@+id/film_species"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:gravity="center_horizontal"
+                    android:textColor="?android:attr/textColorPrimary"
+                    tools:text="Species Of Film" />
+
+                <TextView
+                    android:id="@+id/film_locations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:gravity="center_horizontal"
+                    android:textColor="?android:attr/textColorPrimary"
+                    tools:text="Locations Of Film" />
+
+                <TextView
+                    android:id="@+id/film_vehicles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:gravity="center_horizontal"
+                    android:textColor="?android:attr/textColorPrimary"
+                    tools:text="Vehicles Of Film" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </ScrollView>
+</RelativeLayout>
